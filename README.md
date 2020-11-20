@@ -34,7 +34,7 @@ Lower Bound differ from 0.65 to 0.52  <br />
 
 The implementation is a union of existed agents worked in ANAC agent. 
 
-#How to run
+# How to run
 To build agent you need to download anac project from 
 (http://ii.tudelft.nl/genius/?q=article/releases) and import agent
 in project. You can build agent in a java platform. For a succesfull building genius, you can follow genius's user manual.

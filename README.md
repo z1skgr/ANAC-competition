@@ -120,7 +120,6 @@ General Idea. Heuristic agent[^1] with four basic rules for accepting bids.
 
 
 ## Screenshot
-https://github.com/z1skgr/ANAC-competition/issues/2#issue-1144973956
 
 
 

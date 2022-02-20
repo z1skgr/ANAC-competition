@@ -5,14 +5,19 @@
 * [General Info](#general-information)
 * [Setup](#setup)
 * [How to run](#how-to-run)
+* [Execution](#execution)
 * [Agent Description](#agent-description)
-* [Screenshot](#screenshot)
 * [Acknowledgements](#acknowledgements)
 
 ## General Information
 _*ANAC*_ dedicates to develop successful automated negotiators for scenarios where there is incomplete information about the opponent. The design of generic negotiating agents aims to operate in a variety of scenarios providing benchmarks of performance.
 
 *_GENIUS (General Environment for Negotiation with Intelligent multi-purpose Usage Simulation)_* is a negotiation environment that implements an open architecture for heterogeneous negotiating parties. In addition, Genius can be used to implement, or simulate, real life negotiations.  
+
+## Setup
+* Java Integrated Development Environment (Eclipse IDE)
+* Java Version 8
+* Genius.XXX version
 
 
 ## How to run
@@ -35,9 +40,6 @@ and unzip it to your machine.
   For more information, check `readme` in the genius folder.
   
   
-## Setup
-* Java Integrated Development Environment (Eclipse IDE)
-* Java Version 8
 
 
 ### Connect IDE & Genius
@@ -68,7 +70,6 @@ and unzip it to your machine.
 There are two modes to run a negotiation:
 * Session
 * Tournament
-
 
 
 <div id="image">
@@ -117,9 +118,6 @@ General Idea. Heuristic agent[^1] with four basic rules for accepting bids.
 
 
 
-
-
-## Screenshot
 
 
 ## Acknowledgements

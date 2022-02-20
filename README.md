@@ -122,8 +122,6 @@ General Idea. Heuristic agent[^1] with four basic rules for accepting bids.
 ## Screenshot
 
 
-
-
 ## Acknowledgements
 - This project was created for the requirements of the lesson Multiagent Systems
 - You can find every annual competition in [ANAC](https://web.tuat.ac.jp/~katfuji/ANAC2020/#:~:text=The%20Automated%20Negotiating%20Agent%20Competition%20%28ANAC%29%20is%20an,to%20bring%20together%20researchers%20from%20the%20negotiation%20community.)

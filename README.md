@@ -1,4 +1,4 @@
-# MultiAgent Systems (Pappous Agent)
+# Automated Negotiating Agents Competition (ANAC) (Pappous Agent)
  Agent participating to local ANAC competition in Technical University of Chania 
 
 # Introduction
@@ -35,10 +35,18 @@ Lower Bound differ from 0.65 to 0.52  <br />
 The implementation is a union of existed agents worked in ANAC agent. 
 
 # How to run
-To build agent you need to download anac project from 
-(http://ii.tudelft.nl/genius/?q=article/releases) and import agent
-in project. You can build agent in a java platform. For a succesfull building genius, you can follow genius's user manual.
+Genius can run on any machine running Java 8. Java 9 is not yet supported.
 
+1. Download the file `genius-XXX.zip` from
+```
+http://ii.tudelft.nl/genius/?q=article/releases
+```
+and unzip it to your machine.
+
+1. Install the environment, the file `genius-XXX.zip`
+
+
+# Screenshot
 
 
 # AI_application_of_algorithms_on_probs

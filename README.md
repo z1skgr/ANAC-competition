@@ -55,7 +55,7 @@ There are 3 log files created:
 * logStats.xml file
 
 
-![alt-text-1](image1.png "title-1") ![alt-text-2](image2.png "title-2")
+![Session](https://user-images.githubusercontent.com/22920222/154848762-76663eb1-07c0-4cb6-89b2-2c83ed244d10.png) ![alt-text-2](image2.png "title-2")
 
 For more info about parameter description/selection, see `readme`
 

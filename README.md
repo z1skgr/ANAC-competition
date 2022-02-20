@@ -5,8 +5,8 @@
 * [General Info](#general-information)
 * [Setup](#setup)
 * [How to run](#how-to-run)
+* [Agent Description](#agent-description)
 * [Screenshot](#screenshot)
-* 
 * [Acknowledgements](#acknowledgements)
 
 ## General Information
@@ -14,35 +14,67 @@ _*ANAC*_ dedicates to develop successful automated negotiators for scenarios whe
 
 *_GENIUS (General Environment for Negotiation with Intelligent multi-purpose Usage Simulation)_* is a negotiation environment that implements an open architecture for heterogeneous negotiating parties. In addition, Genius can be used to implement, or simulate, real life negotiations.  
 
-## Setup
-Java Integrated Development Environment (Eclipse IDE)
 
 ## How to run
 Genius can run on any machine running Java 8. Java 9 is not yet supported.
 
-1. Download the file `genius-XXX.zip` from
-```
-http://ii.tudelft.nl/genius/?q=article/releases
-```
+1. Download the file `genius-XXX.zip` from ` http://ii.tudelft.nl/genius/?q=article/releases`
 and unzip it to your machine.
 
-1. Install the environment, the file `genius-XXX.zip`. 
+2. Install the environment, the file `genius-XXX.zip`. 
   * `genius-XXX.jar` => GENIUS negotiation simulator
 
-2. Start a console and find the directory of `genius-XXX.jar`
+3. Start a console and find the directory of `genius-XXX.jar`
+   - On windows, open the `.jar` using
+     ```java -jar genius-XXX.jar```
+   - On mac, open the `.jar` using <br>
+       - Systemdisk/Applications/Utilities/Console.app
+       - Double click on the app on the path above
 
-  1. On windows, open the `.jar` using
-  ```java -jar genius-XXX.jar```
-  2. On mac, open the `.jar` using
-     1.`Systemdisk/Applications/Utilities/Console.app`
-     2. Double click on the app on the path above
   
-  For, more information, check `readme` in the genius folder.
+  For more information, check `readme` in the genius folder.
   
+  
+## Setup
+* Java Integrated Development Environment (Eclipse IDE)
+* Java Version 8
+
+
+### Connect IDE & Genius
+1. Open Eclipse
+
+2. Select File->New Java Project
+   * Make sure you select `JavaSE-1.8`. If you missed `JavaSE`, you can download it from
+   ```https://www.oracle.com/java/technologies/downloads/#java17```
+   
+3. Import (or drag) `genius-XXX.jar` into the project in the navigator area
+
+4. Connect genius Jar
+       - Right click on the `<your_project_name>` icon and select ”Properties”.
+       - Select the Java Build Path.
+       - Select the Libraries Tab.
+       - Select ”Add JARs”, in the JAR Selection window.  
+       - Open the `<your_project_name>` folder, scroll down to select genius.jar and  run as java application .
+       
+       
+### Create An Agent
+* Drag an example folder from your unzipped genius
+* Drop it on the `src` folder
+* Copy files and rename folder 
+* Work using imagination and check out other agents policy to enrich yours. :octocat:
+
+
 ## Execution
 There are two modes to run a negotiation:
 * Session
 * Tournament
+
+
+
+<div id="image">
+  <img src="https://user-images.githubusercontent.com/22920222/154848764-0d781bd4-a994-4197-9244-1f2ad093c16a.png" id="imageone" width="325"/>
+  <img src="https://user-images.githubusercontent.com/22920222/154848762-76663eb1-07c0-4cb6-89b2-2c83ed244d10.png" id="imagetwo" width="325"/>
+<div>
 
 In each mode, parameters need to be specified for running.
 
@@ -54,42 +86,40 @@ There are 3 log files created:
 * log.xml file
 * logStats.xml file
 
-
-![Session](https://user-images.githubusercontent.com/22920222/154848762-76663eb1-07c0-4cb6-89b2-2c83ed244d10.png) ![alt-text-2](image2.png "title-2")
-
 For more info about parameter description/selection, see `readme`
 
-# Description of Agent
-General Idea. A heuristic agent that follows 4 basic rules for accepting bids.
-1) Upper & Lower Bounds for expected utility. <br />
-2) Differentiation of bounds in time. <br />
-3) Own  & Opponent Bid History. <br /> 
-4) Send Bid with Reservation Value at the end of the deal. <br />
+## Agent Description
+> Agent's name: PappousAgent 
+ 
+General Idea. Heuristic agent[^1] with four basic rules for accepting bids. 
+ 
+1. Expected utility = [Lower Bound  Upper Bound] 
+ 
+2. Bound differentiation in time (percentage reduction of bounds[^2]). 
+ 
+3. Bid History. 
+ 
+4. Final Offer with Reserved Value. 
 
 
-# Decide Offer
-1)First move of the player is chosen as the best possible <br />
+### Decide Offer
 
-2)Select Bid that have utility in a specific range <br />
+* First move as the best possible.
 
-3)The selected Bid depends on the evaluation of the previous move <br />
+* Bid with utility in a range.
 
-4)At the end of the negotiation the minimum offer touches the Reservation Value <br />
-
-5)A bid history is used when the transaction is in the final stretch <br />
-
-
-# Bounds
-Upper Bound differ from 1 to 0.8 <br />
-
-Lower Bound differ from 0.65 to 0.52  <br />
-
-
-The implementation is a union of existed agents worked in ANAC agent. 
+* Bid dependance from the previous (or bid history).
+ 
+* Reservation Bid in the end of the negotiation.
 
 
 
-# Screenshot
+
+
+
+
+
+## Screenshot
 https://github.com/z1skgr/ANAC-competition/issues/2#issue-1144973956
 
 
@@ -97,5 +127,6 @@ https://github.com/z1skgr/ANAC-competition/issues/2#issue-1144973956
 
 ## Acknowledgements
 - This project was created for the requirements of the lesson Multiagent Systems
-- You can find every annual competition in https://web.tuat.ac.jp/~katfuji/ANAC2020/#:~:text=The%20Automated%20Negotiating%20Agent%20Competition%20%28ANAC%29%20is%20an,to%20bring%20together%20researchers%20from%20the%20negotiation%20community.
+- You can find every annual competition in [ANAC](https://web.tuat.ac.jp/~katfuji/ANAC2020/#:~:text=The%20Automated%20Negotiating%20Agent%20Competition%20%28ANAC%29%20is%20an,to%20bring%20together%20researchers%20from%20the%20negotiation%20community.)
 
+[^1]: The implementation is a union of existed agents worked in ANAC agent. 

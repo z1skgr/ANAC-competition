@@ -69,11 +69,14 @@ and unzip it to your machine.
 ## Execution
 There are two modes to run a negotiation:
 * Session
-* Tournament
 
 
 <div id="image">
   <img src="https://user-images.githubusercontent.com/22920222/154848764-0d781bd4-a994-4197-9244-1f2ad093c16a.png" id="imageone" width="325"/>
+
+* Tournament
+
+
   <img src="https://user-images.githubusercontent.com/22920222/154848762-76663eb1-07c0-4cb6-89b2-2c83ed244d10.png" id="imagetwo" width="325"/>
 <div>
 

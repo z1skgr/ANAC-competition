@@ -85,10 +85,10 @@ In each mode, parameters need to be specified for running.
 ### Log files
 Log files get the filename tournament- followed by day and time followed by the domain name and
 an extension. <br>
-There are 3 log files created: 
-* log.csv file 
-* log.xml file
-* logStats.xml file
+There are 3 log files: 
+* log.csv  
+* log.xml 
+* logStats.xml
 
 For more info about parameter description/selection, see `readme`
 

@@ -94,6 +94,8 @@ For more info about parameter description/selection, see `readme`
 
 ## Agent Description
 > Agent's name: PappousAgent 
+ 
+
  Heuristic agent[^1] with four basic rules for accepting bids. 
  
 1. Expected utility = [Lower Bound  Upper Bound] 

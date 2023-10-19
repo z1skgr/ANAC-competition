@@ -100,7 +100,7 @@ For more info about parameter description/selection, see `readme`
  
 1. Expected utility = [Lower Bound  Upper Bound] 
  
-2. Bound differentiation in time (percentage reduction of bounds[^2]). 
+2. Bound differentiation in time (percentage reduction of bounds). 
  
 3. Bid History. 
  
